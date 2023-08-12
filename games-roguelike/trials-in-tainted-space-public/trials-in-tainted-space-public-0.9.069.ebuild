@@ -25,22 +25,23 @@ EAPI=8
 DESCRIPTION="Get TiTS!"
 
 # Homepage, not used by Portage directly but handy for developer reference
-HOMEPAGE="https://fenoxo.org/"
+HOMEPAGE="https://fenoxo.com/"
 
 # Point to any required sources; these will be automatically downloaded by
 # Portage.
-SRC_URI="https://fenoxo.org/play/latest_tits_electron_linux.php"
+SRC_URI="https://fenoxo.com/play/latest_tits_electron_linux.php"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
 # If you don't need to change it, leave the S= line out of the ebuild
 # to keep it tidy.
 #S="${WORKDIR}/${P}"
+RESTRICT="mirror"
 
 # License of the package.  This must match the name of file(s) in the
 # licenses/ directory.  For complex license combination see the developer
 # docs on gentoo.org for details.
-LICENSE="BSD"
+LICENSE="all-rights-reserved"
 
 # The SLOT variable is used to tell Portage if it's OK to keep multiple
 # versions of the same package installed at the same time.  For example,
@@ -100,6 +101,8 @@ IUSE=""
 # Build-time dependencies that are executed during the emerge process, and
 # only need to be present in the native build system (CBUILD). Example:
 #BDEPEND="virtual/pkgconfig"
+
+DIR="/opt/${PN}"
 
 # The following src_configure function is implemented as default by portage, so
 # you only need to call it if you need a different behaviour.
