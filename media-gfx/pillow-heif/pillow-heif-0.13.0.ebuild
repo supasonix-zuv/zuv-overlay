@@ -29,7 +29,7 @@ HOMEPAGE="https://github.com/bigcat88/pillow_heif/"
 
 # Point to any required sources; these will be automatically downloaded by
 # Portage.
-SRC_URI="https://github.com/bigcat88/pillow_heif/archive/refs/tags/v${P}.tar.gz"
+SRC_URI="https://github.com/bigcat88/pillow_heif/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}

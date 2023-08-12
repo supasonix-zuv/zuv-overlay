@@ -8,9 +8,5 @@ IUSE=X X
 LICENSE=GPL-2
 PROPERTIES=live
 SLOT=0
-<<<<<<< HEAD
-_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb	font-ebdftopcf	39dc8195299452f48380cb51392cba37	git-r3	97f7f638070d17e4c2b6542589bb4575
-=======
-_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb	font-ebdftopcf	39dc8195299452f48380cb51392cba37	git-r3	27e13c09a4c7e4c78ac812f74727e676
->>>>>>> a87b118 (added other ebuilds)
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb	font-ebdftopcf	39dc8195299452f48380cb51392cba37	git-r3	2358a7b20091609e24bd3a83b3ac5991
 _md5_=07b1708452d52e01840e0c0389c0e57e

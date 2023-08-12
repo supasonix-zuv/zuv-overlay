@@ -29,7 +29,7 @@ HOMEPAGE="https://bambosh.dev/unofficial-homestuck-collection/#download"
 
 # Point to any required sources; these will be automatically downloaded by
 # Portage.
-SRC_URI="https://github.com/Bambosh/unofficial-homestuck-collection/archive/refs/tag/v${P}.tar.gz"
+SRC_URI="https://github.com/Bambosh/unofficial-homestuck-collection/archive/refs/tags/v${PV}.tar.gz"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}

@@ -16,7 +16,8 @@ EAPI=8
 # inherit lists eclasses to inherit functions from. For example, an ebuild
 # that needs the eautoreconf function from autotools.eclass won't work
 # without the following line:
-inherit autotools
+inherit autotools git-r3
+
 #
 # Eclasses tend to list descriptions of how to use their functions properly.
 # Take a look at the eclass/ directory for more examples.
@@ -27,10 +28,7 @@ DESCRIPTION="Show mouse refresh rate under linux + evdev"
 # Homepage, not used by Portage directly but handy for developer reference
 HOMEPAGE="https://sr.ht/~iank/evhz"
 
-if [[ "${PV}" == "9999" ]]; then
-	inherit git-r3
-
-	EGIT_REPO_URI="https://git.sr.ht/~iank/evhz"
+EGIT_REPO_URI="https://git.sr.ht/~iank/evhz"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}

@@ -6,7 +6,7 @@ EAPI=8
 # inherit lists eclasses to inherit functions from. For example, an ebuild
 # that needs the eautoreconf function from autotools.eclass won't work
 # without the following line:
-#inherit autotools
+inherit desktop
 
 MY_PN="homestuck"
 DESCRIPTION="Have you heard of homestuck?"
@@ -96,7 +96,7 @@ pkg_nofetch() {
 
 # The following src_install function is implemented as default by portage, so
 # you only need to call it, if you need different behaviour.
-#src_install() {
+src_install() {
 	# You must *personally verify* that this trick doesn't install
 	# anything outside of DESTDIR; do this by reading and
 	# understanding the install part of the Makefiles.
@@ -121,4 +121,4 @@ pkg_nofetch() {
 	# Again, verify the Makefiles!  We don't want anything falling
 	# outside of ${D}.
 	make_desktop_entry ${PN} "Homestuck-bin"
-#}
+}

@@ -9,9 +9,5 @@ LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=net-im/pidgin dev-vcs/git dev-libs/json-glib
 SLOT=0
-<<<<<<< HEAD
-_eclasses_=git-r3	97f7f638070d17e4c2b6542589bb4575
-=======
-_eclasses_=git-r3	2347f8fe2d392b2a091191f94be37e6f
->>>>>>> a87b118 (added other ebuilds)
+_eclasses_=git-r3	2358a7b20091609e24bd3a83b3ac5991
 _md5_=4c8401fb9f3dc86c2f59f3d37d835d49

@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=This is a plugin for pillow adding heif support
+EAPI=8
+HOMEPAGE=https://github.com/bigcat88/pillow_heif/
+IUSE=gnome X
+KEYWORDS=~amd64
+LICENSE=BSD
+SLOT=0
+SRC_URI=https://github.com/bigcat88/pillow_heif/archive/refs/tags/v0.13.0.tar.gz -> pillow-heif-0.13.0.tar.gz
+_md5_=7228b192272519ddae975c771b90cf02
