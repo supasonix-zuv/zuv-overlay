@@ -3,7 +3,7 @@ rpcs3
 anki-bin
 * unfinished
 nopaystation-scripts
-unofficial-homestuck-collection
+unofficial-homestuck-collection, will stay borked until @achrinza/node-ipc supports node 20
 unofficial-homestuck-collection-bin
 trials-in-tainted-space-bin
 pillow-heif

@@ -10,7 +10,7 @@ EAPI=8
 
 MY_PN="homestuck"
 DESCRIPTION="Have you heard of homestuck?"
-HOMEPAGE="https://bambosh.dev/unofficial-homestuck-collection/#download"
+HOMEPAGE="https://bambosh.dev/unofficial-homestuck-collection/"
 SRC_URI="https://github.com/Bambosh/unofficial-homestuck-collection/releases/download/v${PV}/unofficial-homestuck-collection-${PV}.tar.gz"
 
 # Source directory; the dir where the sources can be found (automatically
@@ -47,10 +47,12 @@ IUSE=""
 # only need to be present in the native build system (CBUILD). Example:
 #BDEPEND="virtual/pkgconfig"
 
+RESTRICT="mirror"
+
 DIR="/opt/${PN}"
 
 pkg_nofetch() {
-	einfo "Please download ${SRC_URI} from:"
+	einfo "Please download the 4gb asset pack from:"
 	einfo "https://bambosh.dev/unofficial-homestuck-collection/#download"
 	einfo "and move it to your distfiles directory."
 }

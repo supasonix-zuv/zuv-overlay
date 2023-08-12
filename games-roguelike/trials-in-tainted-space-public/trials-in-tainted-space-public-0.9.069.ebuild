@@ -86,6 +86,7 @@ src_install() {
 	#	install
 	# Again, verify the Makefiles!  We don't want anything falling
 	# outside of ${D}.
+	insinto /opt/TiTS
 	make_desktop_entry "TiTS" "Trials in Tainted Space" "/opt/TiTS/resources/app/resources/icons/android-chrome-144x144.png" \
 					   "Game;XXX;"
 }
