@@ -11,11 +11,8 @@ DESCRIPTION="Get TiTS!"
 HOMEPAGE="https://fenoxo.com/"
 SRC_URI="https://fenoxo.com/play/latest_tits_electron_linux.php -> ${P}.tar.gz"
 
-# Source directory; the dir where the sources can be found (automatically
-# unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
-# If you don't need to change it, leave the S= line out of the ebuild
-# to keep it tidy.
-#S="${WORKDIR}/${P}"
+S="${WORKDIR}/TiTS-public-${PV}-linux"
+
 RESTRICT="mirror"
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -60,8 +57,6 @@ DIR="/opt/${PN}"
 	#emake
 #}
 
-# The following src_install function is implemented as default by portage, so
-# you only need to call it, if you need different behaviour.
 src_install() {
 	# You must *personally verify* that this trick doesn't install
 	# anything outside of DESTDIR; do this by reading and
@@ -87,6 +82,9 @@ src_install() {
 	# Again, verify the Makefiles!  We don't want anything falling
 	# outside of ${D}.
 	insinto /opt/TiTS
-	make_desktop_entry "TiTS" "Trials in Tainted Space" "/opt/TiTS/resources/app/resources/icons/android-chrome-144x144.png" \
+	doins -r "${S}"/.
+
+	make_desktop_entry TiTS "Trials in Tainted Space" "/opt/TiTS/resources/app/resources/icons/android-chrome-144x144.png" \
 					   "Game;XXX;"
+	xdg_desktop_database_update
 }
