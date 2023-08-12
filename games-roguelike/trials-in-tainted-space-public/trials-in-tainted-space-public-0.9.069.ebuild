@@ -84,7 +84,7 @@ src_install() {
 
 	fperms +x /opt/${PN}/tits
 
-	doicon -s 512 "${WORKDIR}"/${P}/resources/app/resources/icons/android-chrome-512x512.png
+	newicon -s 512 "${WORKDIR}"/TiTS-public-${PV}-linux/resources/app/resources/icons/android-chrome-512x512.png trials-in-tainted-space-public.png
 
-	make_desktop_entry tits "Trials in Tainted Space" "" "Game;"
+	make_desktop_entry /opt/${PN}/tits "Trials in Tainted Space" "" "Game;"
 }
