@@ -3,10 +3,8 @@
 
 EAPI=8
 
-# inherit lists eclasses to inherit functions from. For example, an ebuild
-# that needs the eautoreconf function from autotools.eclass won't work
-# without the following line:
-#inherit autotools
+inherit desktop
+
 DESCRIPTION="Get TiTS!"
 HOMEPAGE="https://fenoxo.com/"
 SRC_URI="https://fenoxo.com/play/latest_tits_electron_linux.php -> ${P}.tar.gz"
@@ -84,7 +82,6 @@ src_install() {
 	insinto /opt/TiTS
 	doins -r "${S}"/.
 
-	make_desktop_entry TiTS "Trials in Tainted Space" "/opt/TiTS/resources/app/resources/icons/android-chrome-144x144.png" \
-					   "Game;XXX;"
-	xdg_desktop_database_update
+	make_desktop_entry "TiTS" "Trials in Tainted Space" "/opt/TiTS/resources/app/resources/icons/android-chrome-144x144.png" \
+					   "Game;"
 }

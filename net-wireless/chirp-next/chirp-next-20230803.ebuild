@@ -5,12 +5,11 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{10,11} )
-inherit distutils-r1
+inherit distutils-r1 desktop xdg-utils
 
 DESCRIPTION="Free open-source tool for programming your amateur radio"
 HOMEPAGE="http://chirp.danplanet.com"
 SRC_URI="https://trac.chirp.danplanet.com/chirp_next/next-${PV}/chirp-${PV}.tar.gz -> ${P}.tar.gz"
-
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -29,7 +28,6 @@ DEPEND="${PYTHON_DEPS}
 RDEPEND="${DEPEND}
 	dev-python/wxpython[${PYTHON_USEDEP}]
 	radioreference? ( dev-python/suds-community[${PYTHON_USEDEP}] )"
-
 
 src_prepare() {
 	distutils-r1_src_prepare
