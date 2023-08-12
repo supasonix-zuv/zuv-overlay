@@ -5,7 +5,7 @@ EAPI=8
 
 inherit desktop
 
-DESCRIPTION="Get TiTS!"
+DESCRIPTION="Get TiTS today!"
 HOMEPAGE="https://fenoxo.com/"
 SRC_URI="https://fenoxo.com/play/latest_tits_electron_linux.php -> ${P}.tar.gz"
 
@@ -79,9 +79,12 @@ src_install() {
 	#	install
 	# Again, verify the Makefiles!  We don't want anything falling
 	# outside of ${D}.
-	insinto /opt/TiTS
+	insinto /opt/${PN}
 	doins -r "${S}"/.
 
-	make_desktop_entry "TiTS" "Trials in Tainted Space" "/opt/TiTS/resources/app/resources/icons/android-chrome-144x144.png" \
-					   "Game;"
+	fperms +x /opt/${PN}/tits
+
+	doicon -s 512 "${WORKDIR}"/${P}/resources/app/resources/icons/android-chrome-512x512.png
+
+	make_desktop_entry tits "Trials in Tainted Space" "" "Game;"
 }
