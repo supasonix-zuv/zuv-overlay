@@ -5,7 +5,6 @@ anki-bin
 nopaystation-scripts
 unofficial-homestuck-collection, will stay borked until @achrinza/node-ipc supports node 20
 unofficial-homestuck-collection-bin
-trials-in-tainted-space-bin
 pillow-heif
 musikcube
 evhz
@@ -17,4 +16,5 @@ uw-ttyp0
 chirp-next-20230803
 nohang
 pywal (use guru)
-purple-discord
+purple-discord?
+trials-in-tainted-space-public
