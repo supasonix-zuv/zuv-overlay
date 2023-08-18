@@ -1,20 +1,20 @@
 * currently borked
-rpcs3
-anki-bin
+- rpcs3
+- anki-bin
 * unfinished
-nopaystation-scripts
-unofficial-homestuck-collection, will stay borked until @achrinza/node-ipc supports node 20
-unofficial-homestuck-collection-bin
-pillow-heif
-musikcube
-evhz
+- nopaystation-scripts
+- unofficial-homestuck-collection, will stay borked until @achrinza/node-ipc supports node 20
+- unofficial-homestuck-collection-bin
+- pillow-heif
+- musikcube
+- evhz
 * functional
-hydrus
-quickemu (it's literally just guru)
-siji
-uw-ttyp0
-chirp-next-20230803
-nohang
-pywal (use guru)
-purple-discord?
-trials-in-tainted-space-public
+- hydrus
+- quickemu (it's literally just guru)
+- siji
+- uw-ttyp0
+- chirp-next-20230803
+- nohang
+- pywal (use guru)
+- purple-discord?
+- trials-in-tainted-space-public
