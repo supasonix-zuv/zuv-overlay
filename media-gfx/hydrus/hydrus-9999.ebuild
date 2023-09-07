@@ -48,7 +48,7 @@ RDEPEND="
 		dev-python/pillow[${PYTHON_USEDEP},lcms]
 		dev-python/psutil[${PYTHON_USEDEP}]
 		dev-python/pyopenssl[${PYTHON_USEDEP}]
-		dev-python/pyside2[widgets,gui,${PYTHON_USEDEP}]
+		dev-python/pyside6[widgets,gui,${PYTHON_USEDEP}]
 		dev-python/python-mpv[${PYTHON_USEDEP}]
 		dev-python/pyyaml[${PYTHON_USEDEP}]
 		dev-python/requests[${PYTHON_USEDEP}]
@@ -59,7 +59,7 @@ RDEPEND="
 		media-libs/opencv[python,png,jpeg,${PYTHON_USEDEP}]
 		media-video/ffmpeg
 
-		>=dev-python/QtPy-1.9.0-r4[pyside2,${PYTHON_USEDEP}]
+		>=dev-python/QtPy-2.3.1[pyside6,${PYTHON_USEDEP}]
 		dev-python/beautifulsoup4[${PYTHON_USEDEP}]
 	')
 "
