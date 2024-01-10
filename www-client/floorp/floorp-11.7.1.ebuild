@@ -15,7 +15,7 @@ DESCRIPTION="The floorp web browser"
 
 HOMEPAGE="https://floorp.app/"
 
-SRC_URI="https://github.com/Floorp-Projects/Floorp/archive/refs/tags/v${PV}.tar.gz"
+SRC_URI="https://github.com/Floorp-Projects/Floorp/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
@@ -36,7 +36,7 @@ KEYWORDS="~amd64"
 
 # A space delimited list of portage features to restrict. man 5 ebuild
 # for details.  Usually not needed.
-#RESTRICT="strip"
+RESTRICT="mirror"
 
 # Run-time dependencies. Must be defined to whatever this depends on to run.
 # Example:
@@ -46,11 +46,15 @@ KEYWORDS="~amd64"
 # had installed on your system when you tested the package.  Then
 # other users hopefully won't be caught without the right version of
 # a dependency.
-RDEPEND=">=sys-libs/glibc-2.17"
+RDEPEND=">=sys-libs/glibc-2.17
+		>=x11-base/xorg-server-1.7
+		>=x11-libs/gtk+-3.14
+		>=dev-libs/dbus-glib-0.110
+		>=dev-libs/glib-2.42
+		>=sys-devel/gcc-4.8.1[cxx]
+		>=x11-libs/libXtst-1.2.3
+"
 
-# Build-time dependencies that need to be binary compatible with the system
-# being built (CHOST). These include libraries that we link against.
-# The below is valid if the same run-time depends are required to compile.
 DEPEND="${RDEPEND}"
 
 # Build-time dependencies that are executed during the emerge process, and
