@@ -47,6 +47,7 @@ src_install() {
 	doins -r "${S}"/.
 
 	fperms +x /opt/${PN}/floorp-bin
+	fperms +x /opt/${PN}/floorp
 
 	#not done, need to find icon location
 	newicon -s 128 "${WORKDIR}"/floorp/browser/chrome/icons/default/default128.png floorp-bin.png
