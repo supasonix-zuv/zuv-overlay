@@ -41,3 +41,16 @@ RDEPEND=">=sys-libs/glibc-2.17
 "
 
 DEPEND="${RDEPEND}"
+
+src_install() {
+	insinto /opt/${PN}
+	doins -r "${S}"/.
+
+	fperms +x /opt/${PN}/floorp-bin
+
+	#not done, need to find icon location
+	newicon -s 128 "${WORKDIR}"/floorp/browser/chrome/icons/default/default128.png floorp-bin.png
+
+	#change decktop entry to floorp
+	make_desktop_entry /opt/${PN}/floorp "Floorp" "" "Network;WebBrowser"
+}
