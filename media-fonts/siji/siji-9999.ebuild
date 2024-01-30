@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit font git-r3
+inherit git-r3 font
 
 DESCRIPTION="An iconic bitmap font based on Stlarch with additional glyphs"
 HOMEPAGE="https://github.com/stark/siji"
@@ -22,4 +22,4 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 DOCS=(Readme.md)
-FONT_S=(${S}/bdf)
+FONT_S=(${S}/pcf)
