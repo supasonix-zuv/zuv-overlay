@@ -1,14 +1,14 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 if [[ ${PV} == *9999 ]]; then
 	SCM="git-r3"
 	EGIT_REPO_URI="https://github.com/stark/siji.git"
 fi
 
-inherit font font-ebdftopcf ${SCM}
+inherit font ${SCM}
 
 DESCRIPTION="An iconic bitmap font based on Stlarch with additional glyphs"
 HOMEPAGE="https://github.com/stark/siji"
