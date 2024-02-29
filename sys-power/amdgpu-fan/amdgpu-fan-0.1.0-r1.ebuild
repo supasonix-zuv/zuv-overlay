@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -35,6 +35,7 @@ src_prepare() {
 python_install_all() {
 	distutils-r1_python_install_all
 	systemd_dounit amdgpu-fan.service
+	doinitd "${FILESDIR}"/amdgpu-fan.rc
 }
 
 python_test() {

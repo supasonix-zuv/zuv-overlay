@@ -1,0 +1,9 @@
+#!/sbin/openrc-run
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+command="/usr/bin/amdgpu-fan"
+command_background=true
+command_args="${AMDGPUFANDARGS}"
+pidfile="/var/run/amdgpu-fan.pid"
+
