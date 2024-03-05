@@ -39,7 +39,6 @@ src_prepare(){
 
 src_install(){
 	local doc="${EPREFIX}/usr/share/doc/${PF}"
-	docinto /usr/share/doc
 	dodoc README.md
 	dodoc rofi-pass-example.config
 
