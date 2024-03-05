@@ -25,6 +25,27 @@ RDEPEND="${DEPEND}
 	>=app-shells/bash-4.0
 	sys-apps/findutils
 	app-admin/pwgen
-	OTP? ( app-admin/pass-otp )
-"
+	OTP? ( app-admin/pass-otp )"
 DEPEND="${RDEPEND}"
+
+src_prepare(){
+	default
+	#I don't know how to skip compilation
+	#the makefile breaks sandbox so it's gotta go
+	rm Makefile || die
+	mv config.example rofi-pass-example.config
+
+}
+
+src_install(){
+	local doc="${EPREFIX}/usr/share/doc/${PF}"
+	docinto /usr/share/doc
+	dodoc README.md
+	dodoc rofi-pass-example.config
+
+	exeinto /usr/bin
+	doexe rofi-pass
+	doexe addpass
+
+	elog "An example config has been placed into ${doc}"
+}
