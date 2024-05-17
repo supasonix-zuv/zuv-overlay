@@ -1,6 +1,7 @@
 * currently borked
 - rpcs3
 - anki-bin
+- jellyfin-mpv-shim 2.7.0
 * unfinished
 - nopaystation-scripts
 - unofficial-homestuck-collection, will stay borked until @achrinza/node-ipc supports node 20
@@ -18,3 +19,7 @@
 - pywal (use guru)
 - purple-discord?
 - trials-in-tainted-space-public
+- i2p 2.5.1
+- rofi-pass
+- amdgpu fan
+- vrms-gentoo
