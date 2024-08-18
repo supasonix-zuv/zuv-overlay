@@ -34,6 +34,7 @@ DEPEND="
 	media-libs/glm
 "
 
+#gentoo bug #933863
 PATCHES=( "${FILESDIR}/${PN}"-7.6-r1-cxx-11-to-17.patch )
 
 src_configure() {
