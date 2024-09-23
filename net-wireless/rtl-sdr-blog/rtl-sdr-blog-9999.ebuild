@@ -5,6 +5,8 @@ EAPI=8
 
 inherit cmake
 
+RESTRICT="mirror"
+
 DESCRIPTION="Turns your Realtek RTL2832 based DVB dongle into a SDR receiver"
 HOMEPAGE="github.com/rtlsdrblog/rtl-sdr-blog"
 
@@ -27,7 +29,7 @@ DEPEND="virtual/libusb:1"
 RDEPEND="${DEPEND}"
 
 PATCHES=(
-	"${FILESDIR}"/rtl-sdl-0.6.0_p2020802-fix-pkgconfig-libdir.patch
+	"${FILESDIR}/rtl-sdl-0.6.0_p2020802-fix-pkgconfig-libdir.patch"
 )
 
 src_configure() {
@@ -42,8 +44,8 @@ src_configure() {
 
 src_install() {
 	cmake_src_install
-	newinitd "${FILESDIR}"/rtl_tcp.initd rtl_tcp
-	newconfd "${FILESDIR}"/rtl_tcp.confd rtl_tcp
+	newinitd "${FILESDIR}/rtl_tcp.initd" rtl_tcp
+	newconfd "${FILESDIR}/rtl_tcp.confd" rtl_tcp
 }
 
 pkg_postinst() {
