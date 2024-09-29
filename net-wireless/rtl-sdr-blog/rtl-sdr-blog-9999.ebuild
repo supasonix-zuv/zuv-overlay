@@ -7,7 +7,7 @@ inherit cmake
 
 RESTRICT="mirror"
 
-DESCRIPTION="Turns your Realtek RTL2832 based DVB dongle into a SDR receiver"
+DESCRIPTION="Turns your Realtek RTL2832 based DVB dongle into an SDR receiver, v4's supported!"
 HOMEPAGE="github.com/rtlsdrblog/rtl-sdr-blog"
 
 if [[ ${PV} == 9999* ]]; then
