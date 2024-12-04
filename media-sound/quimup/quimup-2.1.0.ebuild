@@ -34,6 +34,6 @@ src_install() {
 	default
 	dobin ${PN}
 
-	newicon src/resources/mn_icon.png ${PN}.png
+	newicon source/resources/qm_main_icon.svg ${PN}.svg
 	make_desktop_entry ${PN} Quimup
 }
