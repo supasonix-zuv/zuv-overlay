@@ -3,7 +3,9 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..13} )
+
+DISTUTILS_USE_PEP517="no"
 
 inherit distutils-r1 systemd
 
