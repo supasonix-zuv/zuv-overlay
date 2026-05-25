@@ -1,4 +1,4 @@
-# Copyright 2020-2025 Gentoo Authors
+# Copyright 2020-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -28,6 +28,7 @@ RDEPEND="
 	>=dev-python/pluggy-1.0[${PYTHON_USEDEP}]
 	>=dev-python/rich-13.0[${PYTHON_USEDEP}]
 	>=media-gfx/img2pdf-0.5[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-2.13.4[${PYTHON_USEDEP}]
 "
 # TODO: package PyMuPDF for tests
 BDEPEND="
